@@ -1,0 +1,46 @@
+one class has reference of another class is called aggregation
+agregation is also know as "has-a" relation which is weak relation
+
+in below hero class has reference of adrees,movies
+class Address
+{
+int dno;
+string street;
+Adress(int dno,String street)
+{
+this.dno=dno;
+this.street=street;
+}
+}
+ 
+class Movie
+{
+int tmov,bmov;
+Movie(int tmov,int bmov)
+{
+this.tmov=tmov;
+this.bmov=bmov;
+}}
+
+class Hero{
+string name;
+int age;
+doublde height;
+Adress arr;//creation of class variables;
+Movie m;
+Hero(string nmae,int age,double height,Address arr,Movie m)
+{
+this.name=name...........}
+void disp()
+{
+sout(name)...
+sout("addr"+arr.dno+arr.street);
+sout("hero movies"+m.tmov+m.bmov);}
+psvm(sa)
+{
+Adress a1=new adress(11,madh);
+movi m1=new movie(78,98)
+Hero h1=new Hero(chiru,54,5.7,a1,m1);}}
+
+COMPOSTION: strong aggregation is called composition;
+    ex:relation btwn colege and dept is strong relation once we destroy the coleg object the dept obj becomes useless.....

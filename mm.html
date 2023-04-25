@@ -1,0 +1,26 @@
+
+        <button class="like__btn">
+            <span id="icon"><i class="fa fa-thumbs-up"></i></span>
+            <span id="count">10</span> Like
+         </button>
+
+
+<script>
+    const likeBtn = document.querySelector(".like__btn");
+let likeIcon = document.querySelector("#icon"),
+  count = document.querySelector("#count");
+
+let clicked = false;
+
+
+likeBtn.addEventListener("click", () => {
+  if (!clicked) {
+    likeIcon.innerHTML = '<i class="fa fa-thumbs-up"></i>';
+    count.textContent++;
+  } else {
+    clicked = false;
+    likeIcon.innerHTML = '<i class="fa fa-thumbs-up"></i>';
+    count.textContent++;
+  }
+});
+</script>
